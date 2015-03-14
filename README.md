@@ -9,18 +9,6 @@
 * 从微信支付后台查询某单的支付状态
 * 撤销某一个订单
 
-
-##有问题反馈
-在使用中有任何问题，欢迎反馈给我，可以用以下联系方式跟我交流
-
-* 邮件(89502611@qq.com)
-* QQ: 89502611
-
-##捐助开发者
-如果你觉得SDK对你的编码有帮助并且您诚心的认可我，那么你可以捐助一些金额，当然不捐也不影响我继续完善该SDK。
-
-![微信扫描](http://cos.myqcloud.com/1000371/img_list/cover/9c3d24322d9f76f2b39d87e73a5f235b.png)
-
 ##将SDK引入到你的项目中
 
 ```javascript
@@ -41,3 +29,15 @@ wxPaySDKInstance.query(query, callback);
 // 发起一笔撤销,对某个订单进行撤销
 wxPaySDKInstance.reverse(data, callback);
 ```
+
+##有问题反馈
+在使用中有任何问题，欢迎反馈给我，可以用以下联系方式跟我交流
+
+* 邮件(89502611@qq.com)
+* QQ: 89502611
+
+##捐助开发者
+如果你觉得SDK对你的编码有帮助并且您诚心的认可我，那么你可以捐助一些金额，当然不捐也不影响我继续完善该SDK。
+
+![微信扫描](http://cos.myqcloud.com/1000371/img_list/cover/9c3d24322d9f76f2b39d87e73a5f235b.png)
+
