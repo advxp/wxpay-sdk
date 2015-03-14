@@ -1,0 +1,28 @@
+{
+  "name": "wxpay-sdk",
+  "version": "1.0.3",
+  "description": "wxpay sdk",
+  "main": "pay.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "request": ">= 2.x",
+    "define-js-class": "*",
+    "async": "*",
+    "extend": "*"
+  },
+  "keywords": [
+    "weixin",
+    "pay"
+  ],
+"repository": {
+    "type": "git",
+    "url": "https://github.com/advxp/wxpay-sdk.git"
+},
+"bugs": {
+    "url": "https://github.com/advxp/wxpay-sdk/issues"
+},
+  "author": "advjiang",
+  "license": "ISC"
+}
