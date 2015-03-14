@@ -22,27 +22,27 @@
 8 verbose parsed url   href: '.' }
 9 silly lockFile 3a52ce78- .
 10 verbose lock . C:\Users\advjiang\AppData\Roaming\npm-cache\3a52ce78-.lock
-11 verbose tar pack [ 'C:\\Users\\advjiang\\AppData\\Roaming\\npm-cache\\wxpay-sdk\\1.0.0\\package.tgz',
+11 verbose tar pack [ 'C:\\Users\\advjiang\\AppData\\Roaming\\npm-cache\\wxpay-sdk\\1.0.4\\package.tgz',
 11 verbose tar pack   '.' ]
-12 verbose tarball C:\Users\advjiang\AppData\Roaming\npm-cache\wxpay-sdk\1.0.0\package.tgz
+12 verbose tarball C:\Users\advjiang\AppData\Roaming\npm-cache\wxpay-sdk\1.0.4\package.tgz
 13 verbose folder .
-14 info prepublish wxpay-sdk@1.0.0
+14 info prepublish wxpay-sdk@1.0.4
 15 silly lockFile 1f1177db-tar tar://.
 16 verbose lock tar://. C:\Users\advjiang\AppData\Roaming\npm-cache\1f1177db-tar.lock
-17 silly lockFile b654a98d-ache-wxpay-sdk-1-0-0-package-tgz tar://C:\Users\advjiang\AppData\Roaming\npm-cache\wxpay-sdk\1.0.0\package.tgz
-18 verbose lock tar://C:\Users\advjiang\AppData\Roaming\npm-cache\wxpay-sdk\1.0.0\package.tgz C:\Users\advjiang\AppData\Roaming\npm-cache\b654a98d-ache-wxpay-sdk-1-0-0-package-tgz.lock
+17 silly lockFile 442d1f93-ache-wxpay-sdk-1-0-4-package-tgz tar://C:\Users\advjiang\AppData\Roaming\npm-cache\wxpay-sdk\1.0.4\package.tgz
+18 verbose lock tar://C:\Users\advjiang\AppData\Roaming\npm-cache\wxpay-sdk\1.0.4\package.tgz C:\Users\advjiang\AppData\Roaming\npm-cache\442d1f93-ache-wxpay-sdk-1-0-4-package-tgz.lock
 19 silly lockFile 1f1177db-tar tar://.
 20 silly lockFile 1f1177db-tar tar://.
-21 silly lockFile b654a98d-ache-wxpay-sdk-1-0-0-package-tgz tar://C:\Users\advjiang\AppData\Roaming\npm-cache\wxpay-sdk\1.0.0\package.tgz
-22 silly lockFile b654a98d-ache-wxpay-sdk-1-0-0-package-tgz tar://C:\Users\advjiang\AppData\Roaming\npm-cache\wxpay-sdk\1.0.0\package.tgz
-23 silly lockFile 60adaa39-pm-cache-wxpay-sdk-1-0-0-package C:\Users\advjiang\AppData\Roaming\npm-cache\wxpay-sdk\1.0.0\package
-24 verbose lock C:\Users\advjiang\AppData\Roaming\npm-cache\wxpay-sdk\1.0.0\package C:\Users\advjiang\AppData\Roaming\npm-cache\60adaa39-pm-cache-wxpay-sdk-1-0-0-package.lock
-25 silly lockFile 60adaa39-pm-cache-wxpay-sdk-1-0-0-package C:\Users\advjiang\AppData\Roaming\npm-cache\wxpay-sdk\1.0.0\package
-26 silly lockFile 60adaa39-pm-cache-wxpay-sdk-1-0-0-package C:\Users\advjiang\AppData\Roaming\npm-cache\wxpay-sdk\1.0.0\package
+21 silly lockFile 442d1f93-ache-wxpay-sdk-1-0-4-package-tgz tar://C:\Users\advjiang\AppData\Roaming\npm-cache\wxpay-sdk\1.0.4\package.tgz
+22 silly lockFile 442d1f93-ache-wxpay-sdk-1-0-4-package-tgz tar://C:\Users\advjiang\AppData\Roaming\npm-cache\wxpay-sdk\1.0.4\package.tgz
+23 silly lockFile d05643a8-pm-cache-wxpay-sdk-1-0-4-package C:\Users\advjiang\AppData\Roaming\npm-cache\wxpay-sdk\1.0.4\package
+24 verbose lock C:\Users\advjiang\AppData\Roaming\npm-cache\wxpay-sdk\1.0.4\package C:\Users\advjiang\AppData\Roaming\npm-cache\d05643a8-pm-cache-wxpay-sdk-1-0-4-package.lock
+25 silly lockFile d05643a8-pm-cache-wxpay-sdk-1-0-4-package C:\Users\advjiang\AppData\Roaming\npm-cache\wxpay-sdk\1.0.4\package
+26 silly lockFile d05643a8-pm-cache-wxpay-sdk-1-0-4-package C:\Users\advjiang\AppData\Roaming\npm-cache\wxpay-sdk\1.0.4\package
 27 silly lockFile 3a52ce78- .
 28 silly lockFile 3a52ce78- .
 29 silly publish { name: 'wxpay-sdk',
-29 silly publish   version: '1.0.0',
+29 silly publish   version: '1.0.4',
 29 silly publish   description: 'wxpay sdk',
 29 silly publish   main: 'pay.js',
 29 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
@@ -52,37 +52,44 @@
 29 silly publish      async: '*',
 29 silly publish      extend: '*' },
 29 silly publish   keywords: [ 'weixin', 'pay' ],
+29 silly publish   repository: { type: 'git', url: 'https://github.com/advxp/wxpay-sdk.git' },
+29 silly publish   bugs: { url: 'https://github.com/advxp/wxpay-sdk/issues' },
 29 silly publish   author: { name: 'advjiang' },
 29 silly publish   license: 'ISC',
-29 silly publish   readme: 'ERROR: No README data found!',
-29 silly publish   _id: 'wxpay-sdk@1.0.0',
-29 silly publish   _shasum: 'b1032adcbdde781ee65cea22a6e274c17b943bc8',
+29 silly publish   readme: '##微信支付-刷卡支付SDK?\r\n对微信官方提供的刷卡支付api进行了封装，目前暴漏了支付、撤销、查询3个接口给业务代码。极大的降低了商户接入微信扫码支付的门槛\r\n\r\n\r\n\r\n##SDK有哪些功能？\r\n\r\n* 实现扫码支付，通过扫描用户手机的条码或者二维码提交被扫支付请求\r\n* 从微信支付后台查询某单的支付状态\r\n* 撤销某一个订单\r\n\r\n\r\n##有问题反馈\r\n在使用中有任何问题，欢迎反馈给我，可以用以下联系方式跟我交流\r\n\r\n* 邮件(89502611@qq.com)\r\n* QQ: 89502611\r\n\r\n##捐助开发者\r\n如果你觉得SDK对你的编码有帮助并且您诚心的认可我，那么你可以捐助一些金额，当然不捐也不影响我继续完善该SDK。\r\n![微信扫描](http://cos.myqcloud.com/1000371/img_list/cover/9c3d24322d9f76f2b39d87e73a5f235b.png)\r\n\r\n##将SDK引入到你的项目中\r\n\r\n```javascript\r\nnpm install wxpay-sdk --save\r\n```\r\n\r\n##调用示例\r\n```javascript\r\nvar wxPaySDKInstance = new WXPaySDK(wxAppId, mchId, mchKey);\r\n\r\n// 发起一笔被扫支付 ，参数请参考微信支付被扫支付api文档\r\nwxPaySDKInstance.pay(data, callback);\r\n\r\n// 查询被扫支付订单信息,\r\n// {transaction_id: 111, out_trade_no: 111}\r\nwxPaySDKInstance.query(query, callback);\r\n\r\n// 发起一笔撤销,对某个订单进行撤销\r\nwxPaySDKInstance.reverse(data, callback);\r\n```',
+29 silly publish   readmeFilename: 'README.md',
+29 silly publish   gitHead: '59b4d3d4a88c52637f64a2fa3fb1ae099c51c458',
+29 silly publish   homepage: 'https://github.com/advxp/wxpay-sdk',
+29 silly publish   _id: 'wxpay-sdk@1.0.4',
+29 silly publish   _shasum: 'c2d0410e459007c314d5ec055303fc481afed5bf',
 29 silly publish   _from: '.' }
 30 verbose request where is /wxpay-sdk
 31 verbose request registry https://registry.npmjs.org/
-32 verbose request id 05f15d455e1bb02c
+32 verbose request id 7d998a697dff3614
 33 verbose url raw /wxpay-sdk
 34 verbose url resolving [ 'https://registry.npmjs.org/', './wxpay-sdk' ]
 35 verbose url resolved https://registry.npmjs.org/wxpay-sdk
 36 verbose request where is https://registry.npmjs.org/wxpay-sdk
-37 info trying registry request attempt 1 at 16:45:57
+37 info trying registry request attempt 1 at 18:59:38
 38 http PUT https://registry.npmjs.org/wxpay-sdk
-39 http 401 https://registry.npmjs.org/wxpay-sdk
-40 verbose headers { date: 'Sat, 14 Mar 2015 08:46:01 GMT',
+39 http 403 https://registry.npmjs.org/wxpay-sdk
+40 verbose headers { date: 'Sat, 14 Mar 2015 10:59:40 GMT',
 40 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
 40 verbose headers   'content-type': 'application/json',
 40 verbose headers   'cache-control': 'max-age=60',
-40 verbose headers   'content-length': '67',
+40 verbose headers   'content-length': '4057',
 40 verbose headers   'accept-ranges': 'bytes',
 40 verbose headers   via: '1.1 varnish',
-40 verbose headers   'x-served-by': 'cache-nrt6125-NRT',
+40 verbose headers   'x-served-by': 'cache-nrt6129-NRT',
 40 verbose headers   'x-cache': 'MISS',
 40 verbose headers   'x-cache-hits': '0',
-40 verbose headers   'x-timer': 'S1426322761.535806,VS0,VE115',
+40 verbose headers   'x-timer': 'S1426330779.811494,VS0,VE224',
 40 verbose headers   'keep-alive': 'timeout=10, max=50',
 40 verbose headers   connection: 'Keep-Alive' }
-41 error publish Failed PUT 401
-42 error Error: unauthorized Name or password is incorrect.: wxpay-sdk
+41 error publish Failed PUT 403
+42 error Error: forbidden cannot modify pre-existing version: 1.0.4
+42 error old={"name":"wxpay-sdk","version":"1.0.4","description":"wxpay sdk","main":"pay.js","scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"dependencies":{"request":">= 2.x","define-js-class":"*","async":"*","extend":"*"},"keywords":["weixin","pay"],"repository":{"type":"git","url":"https://github.com/advxp/wxpay-sdk.git"},"bugs":{"url":"https://github.com/advxp/wxpay-sdk/issues"},"author":{"name":"advjiang"},"license":"ISC","gitHead":"59b4d3d4a88c52637f64a2fa3fb1ae099c51c458","homepage":"https://github.com/advxp/wxpay-sdk","_id":"wxpay-sdk@1.0.4","_shasum":"c2d0410e459007c314d5ec055303fc481afed5bf","_from":".","_npmVersion":"1.4.28","_npmUser":{"name":"adv","email":"89502611@qq.com"},"maintainers":[{"name":"adv","email":"89502611@qq.com"}],"dist":{"shasum":"c2d0410e459007c314d5ec055303fc481afed5bf","tarball":"http://registry.npmjs.org/wxpay-sdk/-/wxpay-sdk-1.0.4.tgz"}}
+42 error new={"name":"wxpay-sdk","version":"1.0.4","description":"wxpay sdk","main":"pay.js","scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"dependencies":{"request":">= 2.x","define-js-class":"*","async":"*","extend":"*"},"keywords":["weixin","pay"],"repository":{"type":"git","url":"https://github.com/advxp/wxpay-sdk.git"},"bugs":{"url":"https://github.com/advxp/wxpay-sdk/issues"},"author":{"name":"advjiang"},"license":"ISC","readme":"##微信支付-刷卡支付SDK?\u000d\u000a对微信官方提供的刷卡支付api进行了封装，目前暴漏了支付、撤销、查询3个接口给业务代码。极大的降低了商户接入微信扫码支付的门槛\u000d\u000a\u000d\u000a\u000d\u000a\u000d\u000a##SDK有哪些功能？\u000d\u000a\u000d\u000a* 实现扫码支付，通过扫描用户手机的条码或者二维码提交被扫支付请求\u000d\u000a* 从微信支付后台查询某单的支付状态\u000d\u000a* 撤销某一个订单\u000d\u000a\u000d\u000a\u000d\u000a##有问题反馈\u000d\u000a在使用中有任何问题，欢迎反馈给我，可以用以下联系方式跟我交流\u000d\u000a\u000d\u000a* 邮件(89502611@qq.com)\u000d\u000a* QQ: 89502611\u000d\u000a\u000d\u000a##捐助开发者\u000d\u000a如果你觉得SDK对你的编码有帮助并且您诚心的认可我，那么你可以捐助一些金额，当然不捐也不影响我继续完善该SDK。\u000d\u000a![微信扫描](http://cos.myqcloud.com/1000371/img_list/cover/9c3d24322d9f76f2b39d87e73a5f235b.png)\u000d\u000a\u000d\u000a##将SDK引入到你的项目中\u000d\u000a\u000d\u000a```javascript\u000d\u000anpm install wxpay-sdk --save\u000d\u000a```\u000d\u000a\u000d\u000a##调用示例\u000d\u000a```javascript\u000d\u000avar wxPaySDKInstance = new WXPaySDK(wxAppId, mchId, mchKey);\u000d\u000a\u000d\u000a// 发起一笔被扫支付 ，参数请参考微信支付被扫支付api文档\u000d\u000awxPaySDKInstance.pay(data, callback);\u000d\u000a\u000d\u000a// 查询被扫支付订单信息,\u000d\u000a// {transaction_id: 111, out_trade_no: 111}\u000d\u000awxPaySDKInstance.query(query, callback);\u000d\u000a\u000d\u000a// 发起一笔撤销,对某个订单进行撤销\u000d\u000awxPaySDKInstance.reverse(data, callback);\u000d\u000a```","readmeFilename":"README.md","gitHead":"59b4d3d4a88c52637f64a2fa3fb1ae099c51c458","homepage":"https://github.com/advxp/wxpay-sdk","_id":"wxpay-sdk@1.0.4","_shasum":"c2d0410e459007c314d5ec055303fc481afed5bf","_from":".","_npmVersion":"1.4.28","_npmUser":{"name":"adv","email":"89502611@qq.com"},"maintainers":[{"name":"adv","email":"89502611@qq.com"}],"dist":{"shasum":"c2d0410e459007c314d5ec055303fc481afed5bf","tarball":"http://registry.npmjs.org/wxpay-sdk/-/wxpay-sdk-1.0.4.tgz"}}: wxpay-sdk
 42 error     at RegClient.<anonymous> (D:\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:308:14)
 42 error     at Request._callback (D:\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:246:65)
 42 error     at Request.self.callback (D:\nodejs\node_modules\npm\node_modules\request\request.js:236:22)
