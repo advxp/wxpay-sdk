@@ -1,6 +1,6 @@
 {
   "name": "wxpay-sdk",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "wxpay sdk 微信支付 微信",
   "main": "pay.js",
   "scripts": {
