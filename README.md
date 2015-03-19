@@ -9,12 +9,15 @@
 * 步骤4：微信支付后台系统收到支付请求，根据验证密码规则判断是否验证用户的支付密码，不需要验证密码的交易直接发起扣款，需要验证密码的交易会弹出密码输入框（如图5.2所示）。支付成功后微信端会弹出成功页面（如图5.3所示），支付失败会弹出错误提示。
 
 进入微信刷卡界面
+
 ![进入微信刷卡界面](http://cos.myqcloud.com/1000371/img_list/cover/1bd7d460b4b948a1e443154ee7c23efe.jpg)
 
 输入支付密码，小额支付免输入密码
+
 ![输入支付密码](http://cos.myqcloud.com/1000371/img_list/cover/9895012eb95332d21f06aaf73fd7df78.jpg)
 
 支付完成
+
 ![支付完成](http://cos.myqcloud.com/1000371/img_list/cover/2522a8c6b55e609f8f7e6b20f1879b77.jpg)
 
 
@@ -54,7 +57,7 @@ wxPaySDKInstance.reverse(data, callback);
 * QQ: 89502611
 
 ##捐助开发者
-如果你觉得SDK对你的编码有帮助并且您诚心的认可我，那么你可以捐助一些金额，当然不捐也不影响我继续完善该SDK。
+如果你觉得SDK对你的编码有帮助并且您诚心的认可我，那么你可以随意打赏一下作者。
 
 ![微信扫描](http://cos.myqcloud.com/1000371/img_list/cover/b06af0d14708746a8795395fb5f75c87.png)
 
