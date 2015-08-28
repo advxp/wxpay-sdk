@@ -1,4 +1,19 @@
-##微信支付-刷卡支付SDK?
+##微信支付-公众号JSAPI支付
+在第三方的页面上通过jsapi调用微信支付需要现在后台调用统一下单接口进行下单。此处的SDK封装了此过程
+调用者只需要在后台如下方式调用
+```javascript
+var wxPaySDKInstance = new WXPaySDK(wxAppId, mchId, mchKey);
+wxPaySDKInstance.doOrder({
+	openid: 'openid',
+	body: '购买xxx商品',
+	total_fee: 1, // 下单金额’分为单位
+	notify_url: 'https://youdomain/xxx.php', // 支付成功后的回调地址，用来通知用户
+	outtrade_no: '3234324234' // 商户自己的订单id
+}, function (err, ret) {
+	// 这里处理下单成功后的回调
+})
+
+##微信支付-刷卡支付SDK
 对微信官方提供的刷卡支付api进行了封装，目前暴漏了支付、撤销、查询3个接口给业务代码。极大的降低了商户接入微信扫码支付的门槛
 
 ##哪些场景适合用刷卡（被扫）支付，看如下步骤

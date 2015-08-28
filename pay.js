@@ -108,6 +108,12 @@ var WxPay = xExtend(function () {}, {
                 }
             });
         }
+    },
+
+    /**
+     * 统一下单了
+     */
+    unifiedorder: function () {
 
     }
 });
